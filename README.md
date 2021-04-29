@@ -26,13 +26,13 @@ This is the basic steganography file.  The main method requires 3 arguments: req
 2. steg_lsb.c
 
 
-similar to steg.c but includes two extra features:
+Similar to steg.c but includes two extra features:
  * Parameterized least significant bits hiding of message.
  * Option to use a string as the secret
 
 3. steg_img.c 
 
-has the same functionalities as steg.c, but instead of hiding
+Has the same functionalities as steg.c, but instead of hiding
 a message, it hides an image. To encode, the user needs to enter 3  arguments after ‘e’, container image, secret
 image and output image. To decode, the user need to enter 2 arguments after ‘d’, encoded image, and output image (decoded image).
 
