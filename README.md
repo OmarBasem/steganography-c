@@ -27,8 +27,8 @@ This is the basic steganography file.  The main method requires 3 arguments: req
 
 
 similar to steg.c but includes two extra features:
- 1) Parameterized least significant bits hiding of message.
- 2) Option to use a string as the secret
+ * Parameterized least significant bits hiding of message.
+ * Option to use a string as the secret
 
 3. steg_img.c 
 
