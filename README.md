@@ -27,9 +27,18 @@ This is the basic steganography file.  The main method requires 3 arguments: req
 
 
 similar to steg.c but includes two extra features:
- * 1) Parameterized least significant bits hiding of message.
- * 2) Option to use a string as the secret
+ 1) Parameterized least significant bits hiding of message.
+ 2) Option to use a string as the secret
 
+3. steg_img.c 
 
+has the same functionalities as steg.c, but instead of hiding
+a message, it hides an image. To encode, the user needs to enter 3  arguments after ‘e’, container image, secret
+image and output image. To decode, the user need to enter 2 arguments after ‘d’, encoded image, and output image (decoded image).
+
+```
+./stegi e blackbuck.ppm snail.ppm encoded_image.ppm
+./steg d encoded_image.ppm decoded_image.ppm
+```
 
 
