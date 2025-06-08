@@ -35,8 +35,8 @@ a message, it hides an image. To encode, the user needs to enter 3  arguments af
 image and output image. To decode, the user need to enter 2 arguments after ‘d’, encoded image, and output image (decoded image).
 
 ```
-./stegi e blackbuck.ppm snail.ppm encoded_image.ppm
-./steg d encoded_image.ppm decoded_image.ppm
+./steg_img e blackbuck.ppm snail.ppm encoded_image.ppm
+./steg_img d encoded_image.ppm decoded_image.ppm
 ```
 
 # Example input & output

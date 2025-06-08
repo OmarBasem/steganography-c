@@ -147,8 +147,7 @@ int main(int argc, char **argv) {
         printf("Enter the secret:\n"); // get secret from user
         if (secretType == 'i') {
             scanf(" %d", &secret);
-        }
-        else {
+        } else {
             int sum=0;
             char * secretString = (char *) malloc(100);
             scanf(" %[^\t\n]s", secretString);

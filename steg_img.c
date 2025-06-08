@@ -225,7 +225,7 @@ int main(int argc, char **argv) {
         if (secretIm -> rows * secretIm -> cols > contIm -> cols * contIm -> rows) {
             printf("secret image is bigger than container image\n");
         } else {
-            printf("Enter secret:\n"); // get secret from user
+            printf("Enter secret PIN (number):\n"); // get secret from user
             scanf("%d", &secret);
             printf("Enter the most significant bits count to hide between 2 and 7 of the secret image:\n"); // get the most sig. bits to hide from user
             scanf("%lf", &msb);
@@ -240,7 +240,7 @@ int main(int argc, char **argv) {
         struct PPM *encodedIm = getPPM(finContainer); // read encoded ppm file into ppm struct
         fseek(finContainer, 0, SEEK_SET);
         struct PPM *decodedIm = getPPM(finContainer); // write encoded ppm as decoded ppm
-        printf("Enter secret:\n"); // get secret from user
+        printf("Enter secret PIN (number):\n"); // get secret from user
         scanf("%d", &secret);
         printf("Enter the most significant bits count the was hidden between 2 and 7 of the secret image:\n"); // get msb from user
         scanf("%lf", &msb);

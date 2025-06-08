@@ -123,7 +123,7 @@ int main(int argc, char **argv) {
         printf("Enter a message:\n"); // get message from user
         scanf(" %[^\t\n]s", message);
         mSize = strlen(message);
-        printf("Enter secret:\n"); // get secret from user
+        printf("Enter secret PIN (number):\n"); // get secret from user
         scanf(" %d", &secret);
         struct PPM *im = getPPM(fin); // read ppm file into ppm struct
         struct PPM *encodedIm = (struct PPM *) malloc(sizeof(struct PPM)); // allocate space for output ppm
@@ -133,7 +133,7 @@ int main(int argc, char **argv) {
         writePPM(encodedIm, fout); // write the encoded ppm to file
     } else if (strcmp(argv[1], "d") == 0) { // decode
         struct PPM * encodedIm = getPPM(fin); // read ppm file into struct
-        printf("Enter secret:\n"); // get secret from user
+        printf("Enter secret PIN (number):\n"); // get secret from user
         scanf("%d", &secret);
         printf("decoded message:\n%s\n", decode(encodedIm, secret)); // print the message
     } else {
